@@ -29,7 +29,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     <!-- MENU BAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-
+<!-- Arreglar los botones  porq no linkean con url sino q scrollea -->
             <a class="navbar-brand" href="index.html">GymHouse Fitness </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -117,17 +117,17 @@ https://www.tooplate.com/view/2119-gymso-fitness
                      <div class="about-working-hours">
                           <div>
 
-                                <h2 class="mb-4 text-white" data-aos="fade-up" data-aos-delay="500">Working hours</h2>
+                                <h2 class="mb-4 text-white" data-aos="{% static 'fade-up' %}" data-aos-delay="500">Working hours</h2>
 
-                               <strong class="d-block" data-aos="fade-up" data-aos-delay="600">Sunday : Closed</strong>
+                               <strong class="d-block" data-aos="{% static 'fade-up' %}" data-aos-delay="600">Sunday : Closed</strong>
 
-                               <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Monday - Friday</strong>
+                               <strong class="mt-3 d-block" data-aos="{% static 'fade-up' %}" data-aos-delay="700">Monday - Friday</strong>
 
-                                <p data-aos="fade-up" data-aos-delay="800">7:00 AM - 10:00 PM</p>
+                                <p data-aos="{% static 'fade-up' %}" data-aos-delay="800">7:00 AM - 10:00 PM</p>
 
-                                <strong class="mt-3 d-block" data-aos="fade-up" data-aos-delay="700">Saturday</strong>
+                                <strong class="mt-3 d-block" data-aos="{% static 'fade-up' %}" data-aos-delay="700">Saturday</strong>
 
-                                <p data-aos="fade-up" data-aos-delay="800">6:00 AM - 4:00 PM</p>
+                                <p data-aos="{% static 'fade-up' %}" data-aos-delay="800">6:00 AM - 4:00 PM</p>
                                </div>
                           </div>
                      </div>
@@ -144,18 +144,18 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     <div class="row">
 
                             <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
-                                <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hello, we are Gymso</h2>
+                                <h2 class="mb-4" data-aos="{% static 'fade-up' %}" data-aos-delay="300">Hello, we are Gymso</h2>
 
-                                <p data-aos="fade-up" data-aos-delay="400">You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.</p>
+                                <p data-aos="{% static 'fade-up' %}" data-aos-delay="400">You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.</p>
 
-                                <p data-aos="fade-up" data-aos-delay="500">If you have any question regarding <a rel="nofollow" href="'{% static 'https://www.tooplate.com/view/2119-gymso-fitness' %}'" target="_parent">Gymso Fitness HTML template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contact Tooplate</a> immediately. Thank you.</p>
+                                <p data-aos="{% static 'fade-up' %}" data-aos-delay="500">If you have any question regarding <a rel="nofollow" href="'{% static 'https://www.tooplate.com/view/2119-gymso-fitness' %}'" target="_parent">Gymso Fitness HTML template</a>, you can <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">contact Tooplate</a> immediately. Thank you.</p>
 
                             </div>
 
-                            <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+                            <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="{% static 'fade-up' %}" data-aos-delay="700">
                                 <div class="team-thumb">
                                     
-                                    <img src="{% static 'AppGimnasio/static/images/team/team-image.jpg' %}" class="img-fluid" alt="Trainer">
+                                    <img src="{% static 'images/team/team-image.jpg' %}" class="img-fluid" alt="{% static 'Trainer' %}">
 
                                     <div class="team-info d-flex flex-column">
 
@@ -170,9 +170,9 @@ https://www.tooplate.com/view/2119-gymso-fitness
                                 </div>
                             </div>
 
-                            <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
+                            <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="{% static 'fade-up' %}" data-aos-delay="800">
                                 <div class="team-thumb">
-                                    <img src="('{% static 'static/images/team/team-image01.jpg' %}')" class="img-fluid" alt="Trainer">
+                                    <img src="{% static 'images/team/team-image01.jpg' %}" class="img-fluid" alt="{% static 'Trainer' %}">
 
                                     <div class="team-info d-flex flex-column">
 
@@ -198,14 +198,14 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     <div class="row">
 
                             <div class="col-lg-12 col-12 text-center mb-5">
-                                <h6 data-aos="fade-up">Get A Perfect Body</h6>
+                                <h6 data-aos="{% static 'fade-up' %}">Get A Perfect Body</h6>
 
-                                <h2 data-aos="fade-up" data-aos-delay="200">Our Training Classes</h2>
+                                <h2 data-aos="{% static 'fade-up' %}" data-aos-delay="200">Our Training Classes</h2>
                              </div>
 
-                            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                            <div class="col-lg-4 col-md-6 col-12" data-aos="{% static 'fade-up' %}" data-aos-delay="400">
                                 <div class="class-thumb">
-                                    <img src="{% static 'images/class/yoga-class.jpg' %}" class="img-fluid" alt="Class">
+                                    <img src="{% static 'images/class/yoga-class.jpg' %}" class="img-fluid" alt="{% static 'Class' %}">
 
                                     <div class="class-info">
                                         <h3 class="mb-1">Yoga</h3>
@@ -219,7 +219,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
                                 </div>
                             </div>
 
-                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+                            <div class="mt-5 mt-lg-0 mt-md-0 col-lg-4 col-md-6 col-12" data-aos="{% static 'fade-up' %}" data-aos-delay="500">
                                 <div class="class-thumb">
                                     <img src="{% static 'images/class/crossfit-class.jpg' %}" class="img-fluid" alt="Class">
 
@@ -235,9 +235,9 @@ https://www.tooplate.com/view/2119-gymso-fitness
                                 </div>
                             </div>
 
-                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+                            <div class="mt-5 mt-lg-0 col-lg-4 col-md-6 col-12" data-aos="{% static 'fade-up' %}" data-aos-delay="600">
                                 <div class="class-thumb">
-                                    <img src="{% static 'images/class/cardio-class.jpg' %}" class="img-fluid" alt="Class">
+                                    <img src="{% static 'images/class/cardio-class.jpg' %}" class="img-fluid" alt="{% static 'Class' %}">
 
                                     <div class="class-info">
                                         <h3 class="mb-1">Cardio</h3>
@@ -262,13 +262,13 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     <div class="row">
 
                             <div class="col-lg-12 col-12 text-center">
-                                <h6 data-aos="fade-up">our weekly GYM schedules</h6>
+                                <h6 data-aos="{% static 'fade-up' %}">our weekly GYM schedules</h6>
 
-                                <h2 class="text-white" data-aos="fade-up" data-aos-delay="200">Workout Timetable</h2>
+                                <h2 class="text-white" data-aos="{% static 'fade-up' %}" data-aos-delay="200">Workout Timetable</h2>
                              </div>
 
                              <div class="col-lg-12 py-5 col-md-12 col-12">
-                                 <table class="table table-bordered table-responsive schedule-table" data-aos="fade-up" data-aos-delay="300">
+                                 <table class="table table-bordered table-responsive schedule-table" data-aos="{% static 'fade-up' %}" data-aos-delay="300">
 
                                      <thead class="thead-light">
                                          <th><i class="fa fa-calendar"></i></th>
@@ -372,9 +372,9 @@ https://www.tooplate.com/view/2119-gymso-fitness
                <div class="row">
 
                     <div class="ml-auto col-lg-5 col-md-6 col-12">
-                        <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
+                        <h2 class="mb-4 pb-2" data-aos="{% static 'fade-up' %}" data-aos-delay="200">Feel free to ask anything</h2>
 
-                        <form action="#" method="post" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                        <form action="#" method="post" class="contact-form webform" data-aos="{% static 'fade-up' %}" data-aos-delay="400" role="form">
                             <input type="text" class="form-control" name="cf-name" placeholder="Name">
 
                             <input type="email" class="form-control" name="cf-email" placeholder="Email">
@@ -386,16 +386,16 @@ https://www.tooplate.com/view/2119-gymso-fitness
                     </div>
 
                     <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
-                        <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
+                        <h2 class="mb-4" data-aos="{% static 'fade-up' %}" data-aos-delay="600">Where you can <span>find us</span></h2>
 
-                        <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> 120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil</p>
+                        <p data-aos="{% static 'fade-up' %}" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> 120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil</p>
 <!-- How to change your own map point
 	1. Go to Google Maps
 	2. Click on your location point
 	3. Click "Share" and choose "Embed map" tab
 	4. Copy only URL and paste it within the src="" field below
 -->
-                        <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                        <div class="google-map" data-aos="{% static 'fade-up' %}" data-aos-delay="900">
                            <iframe src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
                     </div>
