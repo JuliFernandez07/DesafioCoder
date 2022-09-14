@@ -1,0 +1,22 @@
+{% extends "AppGimnasio/index.html" %}
+{% load static %}
+
+{% block formularios %}
+<h2 style="color:white;">Inscribite!</h2>
+    {% if formulario.errors %}
+    <p style="color:crimson;">Completaste el formulario de forma incorrecta</p>
+    {% endif %}
+
+    <form action="/profeFormulario" method="POST">
+        <p style="color:rgb(211, 141, 0) ;">Nombre: <input type="text" name="curso"></p>
+        <p style="color:rgb(211, 141, 0) ;">Apellido: <input type="text" name="apellido"></p>
+        <p style="color:rgb(211, 141, 0) ;">Contacto: <input type="text" name="actividad"></p>
+        <p style="color:rgb(211, 141, 0) ;">Email: <input type="text" name="contacto"></p>
+
+        <input type="submit" value="Enviar">
+    </form>
+{% endblock %}
+
+
+    {% block contenido2 %}
+{% endblock %}

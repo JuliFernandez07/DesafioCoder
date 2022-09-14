@@ -17,5 +17,7 @@ class alumno(models.Model):
 class actividades(models.Model):
     nombre = models.CharField(max_length=15)
 
-class asistencia(models.Model):
-    asistencia = models.BooleanField()
+class abonos(models.Model):
+    clases_disponibles = models.IntegerField
+    
+

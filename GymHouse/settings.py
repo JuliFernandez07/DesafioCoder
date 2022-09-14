@@ -55,11 +55,7 @@ ROOT_URLCONF = 'GymHouse.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/Julián/Desktop/GymHouse/AppGimnasio/Templates/inicio.html",
-        "C:/Users/Julián/Desktop/GymHouse/AppGimnasio/Templates/Alumnos.html",
-        "C:/Users/Julián/Desktop/GymHouse/AppGimnasio/Templates/Profesores.html"
-        "C:/Users/Julián/Desktop/GymHouse/AppGimnasio/Templates/Clases.html",
-        ],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
