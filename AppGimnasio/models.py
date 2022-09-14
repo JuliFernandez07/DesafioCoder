@@ -18,6 +18,6 @@ class actividades(models.Model):
     nombre = models.CharField(max_length=15)
 
 class abonos(models.Model):
-    clases_disponibles = models.IntegerField
+    precios = models.IntegerField
     
 
