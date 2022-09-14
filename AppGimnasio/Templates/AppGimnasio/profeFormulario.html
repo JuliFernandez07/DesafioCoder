@@ -7,11 +7,10 @@
     <p style="color:crimson;">Completaste el formulario de forma incorrecta</p>
     {% endif %}
 
-    <form action="/profeFormulario" method="POST">
-        <p style="color:rgb(211, 141, 0) ;">Nombre: <input type="text" name="curso"></p>
-        <p style="color:rgb(211, 141, 0) ;">Apellido: <input type="text" name="apellido"></p>
-        <p style="color:rgb(211, 141, 0) ;">Actividad: <input type="text" name="actividad"></p>
-        <p style="color:rgb(211, 141, 0) ;">Contacto: <input type="text" name="contacto"></p>
+    <form action="" method="POST"> {% csrf_token %}
+      <table style="color:rgb(211, 141, 0) ;">
+        {{ formulario.as_table }}
+      </table>
 
         <input type="submit" value="Enviar">
     </form>

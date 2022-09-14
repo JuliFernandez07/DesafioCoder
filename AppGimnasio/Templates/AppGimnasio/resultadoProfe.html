@@ -1,0 +1,21 @@
+{% extends "AppGimnasio/index.html" %}
+
+{% load static %}
+
+
+{% block formularios %}
+ <p>Estamos buscando al profe: {{ nombre }}</p>
+    {% if profe %}
+
+    <ul>
+        {% for profes in profe %}
+        <li>{{profes.nombre}}</li>
+        {% endfor %}
+    </ul>
+    
+    {% endif %}
+{% endblock %}
+
+
+    {% block contenido2 %}
+{% endblock %}

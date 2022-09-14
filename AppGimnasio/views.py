@@ -31,7 +31,7 @@ def profeForm(request):
             info = formulario.cleaned_data
             profe = profesor(nombre=info["nombre"], apellido=info["apellido"], actividad=info["actividad"], contacto=info["contacto"])
             profe.save()
-            return render("AppGimnasio/Inicio.html")
+            return render(request, "AppGimnasio/Inicio.html")
     else:
         formulario = ProfeFormulario()
 
@@ -44,10 +44,24 @@ def alumnoForm(request):
 
         if formulario.is_valid:
             info = formulario.cleaned_data
-            profe = alumno(nombre=info["nombre"], apellido=info["apellido"], contacto=info["contacto"], email=info["email"])
-            profe.save()
-            return render("AppGimnasio/Inicio.html")
+            alumno_1 = alumno(nombre=info["nombre"], apellido=info["apellido"], contacto=info["contacto"], mail=info["mail"])
+            alumno_1.save()
+            return render(request, "AppGimnasio/Inicio.html")
     else:
         formulario = AlumnoFormulario()
 
     return render(request, "AppGimnasio/alumnoFormulario.html", {"formulario":formulario})
+
+def buscarprofe(request):
+    return render(request, "AppGimnasio/buscarprofe.html")
+
+def buscar(request):
+    if request.GET["nombre"]:
+        nombre = request.get["nombre"]
+        profe = profesor.objects.filter(nombre__icontains=nombre)
+        return render (request, "AppGimnasio/resultadoProfe.html", {"profesor":profe, "nombre":nombre})    
+    
+    else:
+        resultado= "No enviaste datos"
+
+    return HttpResponse(resultado)

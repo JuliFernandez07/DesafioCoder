@@ -5,7 +5,7 @@ class profesor(models.Model):
     nombre = models.CharField(max_length=15)
     apellido = models.CharField(max_length=15)
     actividad = models.CharField(max_length=15)
-    contaco = models.IntegerField()
+    contacto = models.IntegerField()
 
 
 class alumno(models.Model):
